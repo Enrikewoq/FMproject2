@@ -1,13 +1,13 @@
 :root {
     --clr-black: #1c1c1d;
     --clr-pale-gray: #ececec;
-    --clr-white: #f7f7f7;
+    --clr-white: #ffffff;
 
     --clr-dark-blue: hsl(223, 47%, 23%);
     --clr-violett:hsl(245, 75%, 52%);
     --clr-gray: hsl(224, 23%, 55%);
     --clr-pale-blue: hsl(225, 100%, 94%);
-    --clr-very-pale-blue:hsl(225, 100%, 98%);
+    --clr-very-pale-blue:hsl(235, 100%, 98%);
 }
 
 * {
@@ -19,6 +19,11 @@
 body {
     background-color: var(--clr-pale-blue);
     min-height: 100vh;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 .order-container{
     flex-direction: column;
@@ -35,12 +40,18 @@ body {
     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, .25);
 }
 .illustration {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 .order-section{
     padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.order-description {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .order-summary {
     display: flex;
@@ -56,16 +67,24 @@ body {
     color: var(--clr-dark-blue);
 }
 .order-summary-text {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
     font-size: 16px;
+    font-weight: 550;
     color: var(--clr-gray);
 }
 .order-description {
+    background-color: var(--clr-very-pale-blue);
+    border-radius: 1rem;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 2rem;
 }
 .plan-info-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
 }
 .order-plan{
@@ -76,18 +95,24 @@ body {
     color: var(--clr-gray);
     font-weight: 600;
 }
+.order-change {
+    color:var(--clr-violett);
+    cursor: pointer;
+}
 .order-btn {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: .75rem;
     align-items: center;
 }
 .btn {
-    width: 350px;
+    width: 100%;
     padding: 1rem;
-    border-radius: .5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem ;
+    border-radius: 1rem;
     border: none;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 600;
     cursor: pointer;
     box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, .25);
