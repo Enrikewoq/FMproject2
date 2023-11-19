@@ -1,12 +1,7 @@
-# Frontend Mentor - Order summary card solution
-
-This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
-## Table of contents
+ 		CONTENTS
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -14,9 +9,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -25,86 +18,73 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 Users should be able to:
 
 - See hover states for interactive elements
-
-### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+- i want to be as accurate as possible
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](hhttps://enrikewoq.github.io/FMproject2/)
 
 ## My process
+- I start doing html structure
+- then i create the color index
+- Then i work with flex-box to arrange the items
+- Then i add visual styles to every item
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+i learned to create an index for colors, i learned that in a youtube video.
 
-To see how you can add code snippets, see below:
+	 <-- :root {
+	    --clr-black: #1c1c1d;
+	    --clr-pale-gray: #ececec;
+	    --clr-white: #ffffff;
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+	    --clr-dark-blue: hsl(223, 47%, 23%);
+	    --clr-violett:hsl(245, 75%, 52%);
+	    --clr-pale-violett:hsl(245, 85%, 57%);
+	    --clr-gray: hsl(224, 23%, 55%);
+	    --clr-pale-blue: hsl(225, 100%, 94%);
+	    --clr-red-pale-blue: hsl(0, 100%, 91%);
+	    --clr-red:rgb(255, 46, 46);
+	    --clr-very-pale-blue:hsl(258, 100%, 98%);
+	} -->
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+- I learned about transitions, some hover actions, box-shadows.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+	<--.cancel-btn {
+	    color: var(--clr-gray);
+	    transition: 1s;
+	}
+	.cancel-btn:hover {
+	    transform: scale(1.1);
+	    box-shadow: 0 0 2rem rgba(0, 0, 0, .25);
+	    background-color: var(--clr-red-pale-blue);
+	    color: var(--clr-red);
+	} -->
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- I need to learn how to plan better, in this project i went back several times to fix html container tags!
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- I want to know how to use grid it seems very helpfull i couldnt use it this time...
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- This youtube video showed me the existence of (rem) and how to make indexes for colors. [Crea una Pokedex con HTML, CSS y JavaScript(PokeAPI)](https://www.youtube.com/watch?v=drXkf_rytRs&t=2908s)
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+	- video publicado por [freeCodeCamp](freecodecampe.com)
+	- video hecho por [CarpiCoder](https://carpicoder.com/)
+
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Discord --> @enrikewoq
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
