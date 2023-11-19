@@ -5,6 +5,7 @@
 
     --clr-dark-blue: hsl(223, 47%, 23%);
     --clr-violett:hsl(245, 75%, 52%);
+    --clr-pale-violett:hsl(245, 85%, 57%);
     --clr-gray: hsl(224, 23%, 55%);
     --clr-pale-blue: hsl(225, 100%, 94%);
     --clr-very-pale-blue:hsl(235, 100%, 98%);
@@ -61,7 +62,7 @@ main {
     text-align: center;
 }
 .order-summary-title {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 600;
     padding-bottom: 1rem;
     color: var(--clr-dark-blue);
@@ -70,11 +71,12 @@ main {
     display: flex;
     flex-direction: column;
     gap: .75rem;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 550;
     color: var(--clr-gray);
 }
 .order-description {
+    margin-top: 2rem;
     background-color: var(--clr-very-pale-blue);
     border-radius: 1rem;
     display: flex;
@@ -120,9 +122,12 @@ main {
 .proceed-btn {
     color: var(--clr-white);
     background-color: var(--clr-violett);
+    transition: .2s;
 }
 .proceed-btn:hover {
-    
+    transform: scale(1.1);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .25);
+    background-color: var(--clr-pale-violett);
 }
 .cancel-btn {
     color: var(--clr-gray);
